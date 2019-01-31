@@ -1,0 +1,14 @@
+{
+  "name": "oracle-eos",
+  "version": "1.0.0",  
+  "scripts": {    
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~1.2.1",
+    "body-parser": "~1.18.3",
+    "eosjs": "~16.0.9",
+    "big-integer": "~1.6.36",   
+    "binaryen": "~37.0.0"
+  }  
+}
