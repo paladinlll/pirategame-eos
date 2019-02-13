@@ -354,10 +354,10 @@ app.post('/pirategame/action/decisionvote', function (req, res) {
     })
 });
 
-var server = app.listen(7070, function () {
+var server = app.listen(process.env.PORT || 7070, function () {
   var host = server.address().address
   var port = server.address().port
-  console.log("Oraclejs listening on port 7070...")
+  console.log("Oraclejs listening on port ", port)
 
   
   //const myUnit64 = bigInt(Buffer.from(crypto.randomBytes(8)).toString('hex'), 16);

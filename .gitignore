@@ -1,3 +1,4 @@
 oraclejs/yarn.lock
 oraclejs/node_modules/
 client/deps/node_modules/
+server/node_modules/

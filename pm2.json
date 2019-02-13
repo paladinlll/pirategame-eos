@@ -1,0 +1,20 @@
+{
+    "apps": [
+        {
+            "name": "backend",
+            "script": "./server/index.js",          
+            "env": {
+                "NODE_ENV": "dev",
+                "PORT": 8080
+            }
+        },
+		{
+            "name": "oraclejs",
+            "script": "./oraclejs/index.js",          
+            "env": {
+                "NODE_ENV": "dev",
+                "PORT": 7070
+            }
+        },       
+    ]
+}
