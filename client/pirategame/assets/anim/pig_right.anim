@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pig_right",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cf3ac038-6a2c-49c5-a77c-d5f93e9385aa"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "5db6c4a3-ae2d-43de-acef-8eafc5aea611"
+            }
+          },
+          {
+            "frame": 0.31666666666666665,
+            "value": {
+              "__uuid__": "5db6c4a3-ae2d-43de-acef-8eafc5aea611"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
