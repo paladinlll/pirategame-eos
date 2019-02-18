@@ -10,6 +10,8 @@
 
 const {ccclass, property} = cc._decorator;
 
+import EosNetwork from '../../libs/EosNetwork'
+
 @ccclass
 export default class LobbyPanel extends cc.Component {
 
@@ -21,7 +23,18 @@ export default class LobbyPanel extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
     show(){
-        this.node.active = true;        
+        this.node.active = true;
+                
+        var that = this;        
+        let URL = 'https://eos.greymass.com:443';
+        
+        EosNetwork.getInstance().connect(URL, function(err, data) {
+            if (err) {                         
+                console.log('error', JSON.stringify(err));
+            } else {
+                console.log('res', JSON.stringify(data));
+            }            
+        });
     }
 
     hide(){

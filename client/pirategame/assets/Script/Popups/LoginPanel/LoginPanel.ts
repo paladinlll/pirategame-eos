@@ -23,7 +23,7 @@ export default class LoginPanel extends cc.Component {
             this.btnDelegateCall.interactable = true;
         } else{            
             this.btnDelegateCall.interactable = false;
-        }      
+        }    
     }
 
     hide(){
@@ -71,8 +71,9 @@ export default class LoginPanel extends cc.Component {
         );
     }
 
-    onGuest(){
+    onGuest(){        
         this.node.emit('authorized', null);
+        console.log('onGuest');
     }
     // onLoad () {}
 
