@@ -50,4 +50,38 @@ export default class EosNetwork{
             });   
         }  
     }
+
+    getBalance(address:string, cb: callback){
+        if(address == null || address == ''){
+            return cb('empty address', null);
+        }
+        if(this.eosClient == null){            	
+            cb('Please connect to network first!', null);		
+        } else if(address == null){            	
+            cb('Please login first!', null);		
+        } else{
+            this.eosClient.getAccount(address, (err, res) => {    
+                cb(err, res);
+            });    
+        }  
+    }
+
+    getTableRows(scope:string, code:string, table:string, tableKey:string, cb: callback){       
+        if(this.eosClient == null){            	
+            cb('Please connect to network first!', null);		
+        } else{
+            this.eosClient.getTableRows({
+                scope,
+                code,
+                table,
+                tableKey,                       
+                json: true,
+                limit: 10
+            }).then((value) => {              
+                cb(null, value);                
+            }).catch((reason) => {            
+                cb(reason, null);
+            }); 
+        }  
+    }
 }
