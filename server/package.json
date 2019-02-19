@@ -1,11 +1,13 @@
 {
   "name": "backend",
-  "version": "1.0.0",  
-  "scripts": {    
+  "version": "1.0.0",
+  "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "~1.2.1",
-    "body-parser": "~1.18.3"
-  }  
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.13",
+    "request": "^2.88.0"
+  }
 }
